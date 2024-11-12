@@ -43,3 +43,35 @@ Maka, program akan menghasilkan output seperti berikut:
 
 # Flowchart
 
+## Step 1 : Start
+Titik Mulai:
+
+![foto](foto/ss8.png)
+
+## Step 2 : Input Data Mahasiswa
+Buatkan Input Data Mahasiswa dengan mencangkup Nama, Nim, Nilai Tugas, Nilai UTS, Nilai UAS :
+
+![foto](foto/ss9.png)
+
+## Step 3 : Lakukan Seleksi
+Langkah selanjutnya yaitu buatkan decision atau seleksi berupa pertanyaan Menambahkan Data Mahasiswa (Y/T?), jika Ya maka kemabli ke Input Data mahasiswa, jika Tidak maka lanjut ke langkah selanjutnya :
+
+![foto](foto/ss10.png)
+
+## Step 4 : Proses Perhitungan
+Langkah ini untuk memproses Nilai Akhir dari Input nilai nilai yang telah dimasukan :
+
+![foto](foto/ss11.png)
+
+## Step 5 : Output Nilai Akhir
+Masuk kelangkah Akhir yaitu menampilkan Nilai Akhir dari Data Mahasiswa yang telah diinputkan dan sudah dihitung :
+
+![foto](foto/ss12.png)
+
+## Step 6 : End
+Titik Berhenti :
+
+![foto](foto/ss13.png)
+
+# KESIMPULAN :
+Kesimpulan dari Laporan Praktikum ini adalah penggunaan append yaitu dapat menambahkan element lain, jika kita perhatikan penggunaan perulangan sangat membantu untuk memastikan jika ada tambahan data yang diinputkan, namun dari semua itu semua adalah kelas dari sebuah List dari tema praktikum kali ini. Penggunaan List berguna untuk mengetahui apa saja yang ada di dalam data, List mampu menampung beberapa element berbeda.
