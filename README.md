@@ -1,4 +1,4 @@
-# PRATIKUM 4
+# PRAKTIKUM 4
 
 ## Step 1
 Pertama-tama, kita memulai dengan membuat list kosong bernama data_mahasiswa. List ini akan berfungsi sebagai wadah untuk menyimpan semua data yang akan dimasukkan oleh pengguna.
