@@ -1,32 +1,38 @@
 data_mahasiswa = []
 
+def hitung_nilai_akhir(tugas, uts, uas):
+    return (tugas * 0.30) + (uts * 0.35) + (uas * 0.35)
+
 while True:
     print("\nMasukkan data mahasiswa:")
+    nim = input("NIM: ")
     nama = input("Nama: ")
-    tugas = float(input("Nilai Tugas: "))
-    uts = float(input("Nilai UTS: "))
-    uas = float(input("Nilai UAS: "))
-
-    nilai_akhir = (tugas * 0.3) + (uts * 0.35) + (uas * 0.35)
-
+    tugas = float(input("Nilai Tugas (0-100): "))
+    uts = float(input("Nilai UTS (0-100): "))
+    uas = float(input("Nilai UAS (0-100): "))
+                
+    nilai_akhir = hitung_nilai_akhir(tugas, uts, uas)
+    
     data_mahasiswa.append({
-        'nama': nama,
-        'tugas': tugas,
-        'uts': uts,
-        'uas': uas,
-        'nilai_akhir': nilai_akhir
+        'NIM': nim,
+        'Nama': nama,
+        'Tugas': tugas,
+        'UTS': uts,
+        'UAS': uas,
+        'Nilai Akhir': nilai_akhir
     })
-
-    tambah = input("\nTambah data lagi? (y/t): ").lower()
-    if tambah == 't':
+    
+    tambah_data = input("\nApakah ingin menambah data lagi? (y/t): ").lower()
+    if tambah_data == 't':
         break
 
-print("\nDaftar Nilai Mahasiswa:")
-print("="*50)
-print(f"{'Nama':<15} {'Tugas':<10} {'UTS':<10} {'UAS':<10} {'Nilai Akhir':<10}")
-print("="*50)
+print("\nDaftar Data Mahasiswa:")
+print("="*70)
+print(f"{'No.':<5} {'NIM':<10} {'Nama':<15} {'Tugas':<10} {'UTS':<10} {'UAS':<10} {'Nilai Akhir':<10}")
+print("="*70)
 
-for mhs in data_mahasiswa:
-    print(f"{mhs['nama']:<15} {mhs['tugas']:<10} {mhs['uts']:<10} {mhs['uas']:<10} {mhs['nilai_akhir']:<10.2f}")
+for index, mhs in enumerate(data_mahasiswa, start=1):
+    print(f"{index:<5} {mhs['NIM']:<10} {mhs['Nama']:<15} {mhs['Tugas']:<10} {mhs['UTS']:<10} {mhs['UAS']:<10} {mhs['Nilai Akhir']:<10.2f}")
 
-print("="*50)
+print("="*70)
+print("Program selesai.")
